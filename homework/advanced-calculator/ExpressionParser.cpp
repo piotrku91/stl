@@ -1,5 +1,4 @@
 #include "ExpressionParser.hpp"
-#include <iostream>
 
 bool ExpressionParser::slice(std::string input)
 {
@@ -18,12 +17,11 @@ Operand2_="";
 Operation_='\n';
   return false;
   };
-  
+
 Operand1_=input.substr(0,std::distance(input.begin(),opchar));
 Operation_=*opchar;
 Operand2_=input.substr(std::distance(input.begin(),opchar)+1,input.size());
 
-std::cout << Operand1_ << Operation_ << Operand2_ << std::endl;
 setParsingFlag(true);
 return true;
 }

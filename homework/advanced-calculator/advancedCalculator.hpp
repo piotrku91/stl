@@ -1,8 +1,8 @@
 #pragma once
 #include <map>
 #include <string>
-#include "ExpressionParser.hpp"
 #include <cmath>
+#include "ExpressionParser.hpp"
 
 enum class ErrorCode {
     OK,
